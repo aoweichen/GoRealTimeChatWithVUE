@@ -199,4 +199,4 @@
 
     /root/STU/GOSTU/GoRealTimeChatWithVUE/grtcfrontend/src/api/request.ts
 
-里面的 BASEURL 为你自己后端的相关接口就行
+里面的 BASEURL 为你自己后端的相关接口就行。然后在主目录下运行命令 yarn install 等待安装完成后 再运行 yarn dev 即可启动调试。
