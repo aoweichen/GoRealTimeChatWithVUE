@@ -1,9 +1,6 @@
 # GoRealTimeChatWithVUE
 这是一个我用于学习go语言的仓库，该仓库包含了一个使用Go语言编写的实时聊天项目，其功能包含私聊、群聊、表情包消息（群聊不可用）、文件语音消息（暂时有点问题）等基本的IM功能。
 
-# GoRealTimeChatWithVUE
-这是一个我用于学习go语言的仓库，该仓库包含了一个使用Go语言编写的实时聊天项目，其功能包含私聊、群聊、表情包消息（群聊不可用）、文件语音消息（暂时有点问题）等基本的IM功能。
-
 
 # 如何运行？
 ## GO后端配置项
@@ -193,3 +190,13 @@
     这个请自行百度
 
 配置成功后创建一个mysql数据库，然后运行main.go就可以启动后端服务了。
+
+
+## VUE前端配置项
+
+### 配置请求地址
+修改
+
+    /root/STU/GOSTU/GoRealTimeChatWithVUE/grtcfrontend/src/api/request.ts
+
+里面的 BASEURL 为你自己后端的相关接口就行
