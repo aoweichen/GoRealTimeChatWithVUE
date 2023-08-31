@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+option go_package = "../GRPC/AUTH/;AUTHGRPC";
+
+service IMAuthHandler{
+  // CheckAuth是一个RPC方法，用于验证身份信息
+  // 参数CheckAuthRequest是一个消息类型，表示包含token的请求
+  // 返回CheckAuthResponse消息类型，表示包含验证结果的响应
+  rpc CheckAuth(CheckAuthRequest) returns (CheckAuthResponse);
+}
+
+message CheckAuthRequest{
+  // token是一个字符串类型的字段，用于传递身份验证的令牌
+  string token = 1;
+}
+
+message CheckAuthResponse{
+  // id是一个int64类型的字段，表示身份验证成功后返回的用户ID
+  int64 id = 2;
+  // uid是一个字符串类型的字段，表示身份验证成功后返回的用户唯一标识符
+  string uid = 3;
+  // name是一个字符串类型的字段，表示身份验证成功后返回的用户名
+  string name = 4;
+  // email是一个字符串类型的字段，表示身份验证成功后返回的用户电子邮件地址
+  string email = 5;
+  // expire_time是一个int64类型的字段，表示身份验证令牌的过期时间
+  int64 expire_time = 6;
+}

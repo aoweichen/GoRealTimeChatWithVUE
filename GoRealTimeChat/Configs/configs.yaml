@@ -1,0 +1,60 @@
+Server:
+  Name: 'Im-Services'
+  Listen: ':8000'
+  Mode: 'debug' # gin的运行模式 debug, release, test
+  Env: 'local' #local production testing
+  Lang: 'zh'
+  CoroutinePoll: 100000 # 启动的协程池数量
+  Node: 'localhost:9505' #当前服务集群节点
+  ServiceOpen: false # 开启集群服务
+  GrpcListen: ':8002' # grpc端口
+  FilePath: "H:\\PROJECT\\goSTU\\GoRealTimeChat\\asserts\\UploadFile"
+MySQL:
+  host: "127.0.0.1"
+  port: 3306
+  database: "grtc"
+  username: "root"
+  password: 581792
+  charset: "utf8mb4"
+Log:
+  level: 'debug' # 开发时推荐使用 "debug" 或者 "info" ，生产环境下使用 "error"
+  type: 'daily' #"single" 独立的文件  "daily" 按照日期每日一个
+  filename: 'H:\PROJECT\goSTU\GoRealTimeChat\Storage\Logs\logs.log'
+  maxSize: 64 # 保存最大单位 M
+  maxBackup: 30 #最多保存日志文件数，0 为不限，MaxAge 到了还是会删
+  maxAge: 7 #最多保存多少天
+  compress: false #是否压缩
+JWT:
+  secret: 'acb2ca5bc8d7fb2ef8f890f1be15d964' #密钥
+  timeToLive: 640000 #
+Redis:
+  host: '127.0.0.1'
+  port: 6379
+  password:
+  db: 1
+  poll: 15 #连接池 默认为4倍cpu数
+  conn: 10 #最小空闲连接数
+Mail:
+  driver: 'smtp'
+  host: 'smtp.qq.com'
+  name: '2557780575@qq.com'
+  password: 'shbsxikrhbmtdjhh'
+  port: 465
+  encryption: 'ssl'
+  fromName: 'Im-Services'
+  emailCodeSubject: "欢迎使用～GoChat,这是一封邮箱验证码的邮件!"
+  emailCodeHtmlTemplateFilePath: "H:\\PROJECT\\goSTU\\GoRealTimeChat\\HtmlTemplate\\HTML\\EmailCodeHtmlTemlate\\EmailCode.html"
+Nsq:
+  lookupHost: '127.0.0.1:4161'
+  nsqHost: '127.0.0.1:4150'
+
+GoBot:
+  email: '2557780575@qq.com'
+  password: '123456'
+  name: '机器人'
+  avatar: 'https://api.multiavatar.com/2557780575.png'
+QiNiu:
+  accessKey: 'hx8_OcNEZOJ_AUx4gi74mX_kweJ1XNjKz8dRR7z9'
+  secretKey: 'af3aCLEdby1FRyF460aY8H-pfdvDqiwrpqyGy1NK'
+  bucket: 'grtc'
+  domain: 's08krditv.hn-bkt.clouddn.com'

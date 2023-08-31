@@ -1,0 +1,5 @@
+{"level":"INFO","time":"2023-08-21 21:00:10","caller":"GoRealTimeChat/main.go:18","message":"mysql 连接成功"}
+{"level":"INFO","time":"2023-08-21 21:04:02","caller":"GoRealTimeChat/main.go:18","message":"mysql 连接成功"}
+{"level":"INFO","time":"2023-08-21 21:04:02","caller":"GoRealTimeChat/main.go:18","message":"迁移表 User.ImUsers{ID:0, Name:\"\", Email:\"\", Password:\"\", CreatedAt:\"\", UpdatedAt:\"\", Avatar:\"\", BoundOauth:0, OauthType:0, Status:0, Bio:\"\", Sex:0, ClientType:0, Age:0, LastLoginTime:\"\", Uid:\"\", UserJson:\"\", UserType:0} 成功"}
+{"level":"INFO","time":"2023-08-21 21:29:08","caller":"GoRealTimeChat/main.go:18","message":"mysql 连接成功"}
+{"level":"INFO","time":"2023-08-21 21:29:08","caller":"GoRealTimeChat/main.go:18","message":"迁移表 User.ImUsers{ID:0, Name:\"\", Email:\"\", Password:\"\", CreatedAt:\"\", UpdatedAt:\"\", Avatar:\"\", BoundOauth:0, OauthType:0, Status:0, Bio:\"\", Sex:0, ClientType:0, Age:0, LastLoginTime:\"\", Uid:\"\", UserJson:\"\", UserType:0, Salt:[]uint8(nil)} 成功"}
