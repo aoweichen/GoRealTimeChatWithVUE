@@ -14,7 +14,7 @@ MySQL:
   port: 3306
   database: "grtc"
   username: "root"
-  password: 581792
+  password: 11111
   charset: "utf8mb4"
 Log:
   level: 'debug' # 开发时推荐使用 "debug" 或者 "info" ，生产环境下使用 "error"
@@ -38,7 +38,7 @@ Mail:
   driver: 'smtp'
   host: 'smtp.qq.com'
   name: '2557780575@qq.com'
-  password: 'shbsxikrhbmtdjhh'
+  password: '11111'
   port: 465
   encryption: 'ssl'
   fromName: 'Im-Services'
@@ -54,7 +54,7 @@ GoBot:
   name: '机器人'
   avatar: 'https://api.multiavatar.com/2557780575.png'
 QiNiu:
-  accessKey: 'hx8_OcNEZOJ_AUx4gi74mX_kweJ1XNjKz8dRR7z9'
-  secretKey: 'af3aCLEdby1FRyF460aY8H-pfdvDqiwrpqyGy1NK'
+  accessKey: '11111'
+  secretKey: '11111'
   bucket: 'grtc'
   domain: 's08krditv.hn-bkt.clouddn.com'
