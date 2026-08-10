@@ -1,3 +1,5 @@
+
+
 # GoRealTimeChatWithVUE
 这是一个我用于学习go语言的仓库，该仓库包含了一个使用Go语言编写的实时聊天项目，其功能包含私聊、群聊、表情包消息（群聊不可用）、文件语音消息（暂时有点问题）等基本的IM功能。https://github.com/IM-Tools/api-service ，非常感谢该作者的分享。
 
@@ -197,6 +199,6 @@
 ### 配置请求地址
 修改
 
-    /root/STU/GOSTU/GoRealTimeChatWithVUE/grtcfrontend/src/api/request.ts
+    grtcfrontend/src/api/request.ts
 
-里面的 BASEURL 为你自己后端的相关接口就行。然后在主目录下运行命令 yarn install 等待安装完成后 再运行 yarn dev 即可启动调试。
+里面的 `baseURL` 为你自己后端的相关接口就行。然后在主目录下运行命令 `yarn install` 等待安装完成后，再运行 `yarn dev` 即可启动调试。
